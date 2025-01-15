@@ -1,6 +1,6 @@
 // controllers/urlController.js
 const shortid = require('shortid')
-const URL = require('../models/URL');
+const URL = require('../models/Url');
 
 const createShortUrl = async (req, res) => {
   try {
