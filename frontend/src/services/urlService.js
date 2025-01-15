@@ -1,7 +1,7 @@
 // src/services/urlService.js
 import { getAuthHeaders } from './authService';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://url-shortner-backend-madh.onrender.com/api';
 
 const getAuthToken = () => {
   return localStorage.getItem('token') || document.cookie
