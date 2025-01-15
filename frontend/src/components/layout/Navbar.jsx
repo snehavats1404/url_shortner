@@ -2,7 +2,11 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { logout } from '../../services/authService';
+<<<<<<< HEAD
 import { useState} from 'react';
+=======
+import React,{ useState } from 'react';
+>>>>>>> 955b4d6de164be8a82dfb56bf7128c6326872698
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 const toggleMobileMenu = () => {
