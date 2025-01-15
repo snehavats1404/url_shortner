@@ -3,12 +3,12 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getUserUrls } from '../../services/urlService';
 import { useAuth } from '../../contexts/AuthContext';
-const API_URL = import.meta.env.VITE_API_URL || 'https://url-shortner-backend-madh.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 export default function UrlList() {
   const [urls, setUrls] = useState([]);
   const [loading, setLoading] = useState(true);
-   const [error, setError] = useState(null);
+   const [error, setError] = useState('');
   const { user } = useAuth();
 
   useEffect(() => {

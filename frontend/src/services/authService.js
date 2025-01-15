@@ -1,6 +1,6 @@
 // src/services/authService.js
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://url-shortner-backend-madh.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
 
 // Helper to get the token from cookie
 const getTokenFromCookie = () => {
