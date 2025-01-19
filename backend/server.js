@@ -39,7 +39,7 @@ app.use(session({
   }
 }));
 // Routes
-app.use('s/:shortId',redirectToUrl);
+app.use('/api/s/:shortId',redirectToUrl);
 app.use('/api/users', userRoutes);
 app.use('/api/urls', urlRoutes);
 app.use(express.static('public'));
