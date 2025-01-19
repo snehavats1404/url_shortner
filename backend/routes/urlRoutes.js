@@ -8,7 +8,7 @@ const {
   redirectToUrl,
   getUserUrls
 } = require('../controllers/urlController');
-router.get('/s/:shortId', redirectToUrl);
+router.get('/api/s/:shortId', redirectToUrl);
 router.post('/', protect, createShortUrl);
 router.get('/analytics/:shortId', protect, getUrlAnalytics);
 router.get('/user', protect, getUserUrls);
